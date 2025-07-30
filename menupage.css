@@ -216,7 +216,10 @@ body h1 {
 .overview h1 {
     text-align: center;
 
-    font-size: 1.3em;
+    font-size: 1.5em;
+    font-family: 'Hanuman', serif;
+    font-weight: bold;
+    margin: 0px;
     transform: translateY(8px);
   
     opacity: 0.8;
