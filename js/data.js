@@ -390,7 +390,7 @@ var culture_life=[
                 
     },
         {
-        "img": "image/culture/6.jpg",
+        "img": "image/culture/10.jpg",
         "rating_number": "6.8",
         "rating_reviews": "(7,387)",
         "text": "Cambodia in Style",

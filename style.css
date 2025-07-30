@@ -1,12 +1,19 @@
 body {
     margin: 0px;
     padding: 0px;
+
 }
+
+body p {
+    font-family: 'Hanuman', serif;
+}
+
 
 .header {
     width: 100%;
     overflow: hidden;
     /* background-color: aqua; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .header .header-logo {
@@ -18,6 +25,7 @@ body {
     /* background-color: blue; */
 
 }
+
 
 .header-logo img {
     width: 300px;
@@ -39,7 +47,7 @@ body {
 .header-menu ul {
     list-style-type: none;
     margin: auto;
-    transform: translateX(330px);
+    transform: translateX(410px);
     padding: 0px;
 
 }
@@ -52,9 +60,13 @@ body {
     display: block;
     text-decoration: none;
     color: rgb(40, 38, 38);
-    padding: 10px 30px 0px 30px;
+    padding: 10px 20px 0px 20px;
+    /* font-family: "Moul", serif; */
+    font-family: 'Hanuman', serif;
     margin-top: 9px;
-    font-size: 1.1em;
+    font-weight: bold;
+
+    font-size: 1.2em;
 
     transition: all ease-in-out 0.4s;
 }
@@ -77,14 +89,14 @@ body {
     color: rgb(14, 13, 13);
     font-size: 1.8em;
     margin-top: 18px;
-    margin-left: 30px;
+    margin-left: 25px;
     cursor: pointer;
 }
 
 .sub-menu1 {
     background-color: rgba(25, 25, 26, 0.789);
     position: absolute;
-    transform: translateX(1350px);
+    transform: translateX(1380px);
     display: none;
     border-radius: 0px 0px 10px 10px;
     z-index: 1;
@@ -102,7 +114,10 @@ body {
     text-decoration: none;
     color: white;
     padding: 10px 10px 10px 20px;
-    font-size: 1em;
+    font-family: "Hanuman", serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    opacity: 0.9;
 
 }
 
@@ -125,7 +140,7 @@ body {
 }
 
 .slide-bg .ds {
-    width: 60%;
+    width: 40%;
     height: 50%;
     transform: translate(70px, 100px);
     /* background-color: #555; */
@@ -134,8 +149,8 @@ body {
 
 .slide-bg .ds h1 {
     color: white;
-    font-size: 3em;
-    margin: 0px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
     font-weight: bold;
     opacity: 0.8;
 }
@@ -205,8 +220,11 @@ button:hover {
 
 .first-content .ds h1 {
     color: rgb(5, 5, 5);
-    font-size: 3.5em;
+    font-size: 1.6em;
+    font-family: 'Hanuman', serif;
+    margin: 0px 0px 10px 0px;
     font-weight: bold;
+
 
 }
 
@@ -258,7 +276,6 @@ button:hover {
     margin-top: 10px;
     padding: 0px;
     opacity: 0.8;
-    font-weight: bold;
 }
 
 .popular-content {
@@ -287,10 +304,13 @@ button:hover {
 
 .popular-content .title h1 {
     color: rgb(5, 5, 5);
-    font-size: 2.5em;
-    padding: 0px;
-    margin: 0px;
+    font-size: 1.6em;
     font-weight: bold;
+    font-family: 'Hanuman', serif;
+
+    padding: 0px;
+    margin-bottom: 10px;
+
 
 }
 
@@ -339,7 +359,6 @@ button:hover {
     font-size: 1.5em;
     padding: 10px;
     margin: 0px;
-    font-weight: bold;
 }
 
 .box-content hr {
@@ -385,10 +404,12 @@ button:hover {
 
 .slide-content .title h1 {
     color: rgb(5, 5, 5);
-    font-size: 2.5em;
+    font-size: 1.6em;
     padding: 10px;
-    margin: 0px;
     font-weight: bold;
+    margin: 0px;
+    font-family: 'Hanuman', serif;
+
 }
 
 .slide-content .slider {
@@ -443,6 +464,7 @@ button:hover {
     color: rgb(5, 5, 5);
     font-size: 1.3em;
     padding: 10px;
+    margin-bottom: 20px;
     margin: 0px;
     font-weight: bold;
 }
@@ -515,11 +537,17 @@ button:hover {
 
 .last-container .title h1 {
     text-align: center;
+    color: rgb(5, 5, 5);
+    font-size: 1.6em;
+    font-family: 'Hanuman', serif;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0px;
 }
 
 .last-container .title p {
-    font-size: 0.9em;
-    line-height: 25px;
+    font-size: 1em;
+    line-height: 30px;
     /* color: #c92424; */
     margin: 0px 100px 0px 100px;
     opacity: 0.7;
@@ -586,7 +614,7 @@ button:hover {
 
 .reason h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.7em;
 }
 
 .reason-content {
@@ -600,9 +628,16 @@ button:hover {
     flex-wrap: wrap;
 }
 
+.reason h1 {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Hanuman', serif;
+    font-weight: bold;
+}
+
 .reason-content .box {
     width: 26%;
-    height: 350px;
+    overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
     padding: 5px;
@@ -624,7 +659,8 @@ button:hover {
 
 .reason-content .box h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 15px;
     opacity: 0.7;
     color: rgb(20, 18, 18);
 }
@@ -662,13 +698,16 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
 
 }
 
 .article .title h1 {
     text-align: center;
-    font-size: 3em;
+    font-family: 'Hanuman', serif;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin: 0px;
 }
 
 .article .box {
@@ -702,7 +741,7 @@ button:hover {
 }
 
 .article .box .ds h1 {
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: #555;
 }
 
@@ -727,12 +766,15 @@ button:hover {
 
 
 
-
+footer p h1 a{
+    font-family: 'Hanuman', serif;
+    
+}
 footer {
     background-color: #333;
     color: #fff;
     padding: 40px 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Moul', serif;
 }
 
 .footer-container {
@@ -765,13 +807,13 @@ footer {
 .footer-social a {
     color: #fff;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
 }
 
 .footer-column h3 {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 14px;
     border-bottom: 1px solid #555;
     padding-bottom: 5px;
 }
@@ -783,12 +825,14 @@ footer {
 
 .footer-column ul li {
     margin: 8px 0;
+    font-size: 12px;
+    opacity: 0.8;
 }
 
 .footer-column ul li a {
     color: #ddd;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .footer-column ul li a:hover {
@@ -824,6 +868,12 @@ h1 {
         flex-direction: column;
         align-items: center;
         height: auto;
+
+    }
+
+    marquee {
+        display: none;
+
     }
 
     .header .header-logo,
@@ -837,14 +887,16 @@ h1 {
         font-size: 0.8em;
         padding: 0px;
     }
-     .slide-bg .ds {
+
+    .slide-bg .ds {
         width: 50px;
         left: 30px;
         bottom: 30px;
 
     }
+
     .fa-bars {
-        transform: translateX(-11px);
+        transform: translateX(-20px);
     }
 
     .slide-bg .ds h1 {
@@ -855,7 +907,7 @@ h1 {
         font-size: 0.5em;
         list-style: 20px;
         opacity: 0.7;
-        
+
     }
 
 
@@ -918,14 +970,16 @@ h1 {
         float: none;
         height: auto;
     }
-     .first-content .image{
-        margin-bottom: 5px ;
-     }
+
+    .first-content .image {
+        margin-bottom: 5px;
+    }
 
     .first-content .ds h1 {
         font-size: 1.5em;
     }
-        .first-content .ds p {
+
+    .first-content .ds p {
         font-size: 0.9em;
         line-height: 20px;
     }
@@ -947,7 +1001,7 @@ h1 {
     }
 
     /* Slide content */
-     .carousel-item .slider {
+    .carousel-item .slider {
         width: 100%;
         height: 2000px;
 
@@ -1008,7 +1062,7 @@ h1 {
 
     }
 
-        .popular-content .box-content,
+    .popular-content .box-content,
     .slide-content .slider,
     .box-image,
     .reason-content,
