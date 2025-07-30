@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Holiday</title>
+    <link rel="icon" href="image/Travel-Banner-2023-002.png">
+    <link rel="stylesheet" href="menupage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Moul&display=swap" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body p {
+            font-family: 'Hanuman', serif;
+        }
+
+        body h1 {
+            font-family: 'Moul', serif;
+        }
+
+
+        .header {
+            width: 100%;
+            overflow: hidden;
+            /* background-color: aqua; */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .header-logo {
+            width: 45%;
+            height: 100%;
+            float: left;
+
+
+            /* background-color: blue; */
+
+        }
+
+
+        .header-logo img {
+            width: 300px;
+            transform: translateX(25px);
+            object-fit: contain;
+
+
+        }
+
+        .header .header-menu {
+            width: 55%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+
+
+        }
+
+        .header-menu ul {
+            list-style-type: none;
+            margin: auto;
+            transform: translateX(410px);
+            padding: 0px;
+
+        }
+
+        .header-menu ul li {
+            float: left;
+        }
+
+        .header-menu ul li a {
+            display: block;
+            text-decoration: none;
+            color: rgb(40, 38, 38);
+            padding: 10px 20px 0px 20px;
+            /* font-family: "Moul", serif; */
+            font-family: 'Hanuman', serif;
+            margin-top: 9px;
+            font-weight: bold;
+
+            font-size: 1.2em;
+
+            transition: all ease-in-out 0.4s;
+        }
+
+        .header-menu ul li a:hover {
+            transform: scale(1.1);
+            color: #cd9090;
+
+        }
+
+        /* ---------------------------------------------- */
+        .sub-menu {
+            float: left;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fa-bars {
+            color: rgb(14, 13, 13);
+            font-size: 1.8em;
+            margin-top: 18px;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+
+        .sub-menu1 {
+            background-color: rgba(25, 25, 26, 0.789);
+            position: absolute;
+            transform: translateX(1380px);
+            display: none;
+            border-radius: 0px 0px 10px 10px;
+            z-index: 1;
+        }
+
+        .sub-menu1 ul {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .sub-menu1 ul li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 10px 10px 10px 20px;
+            font-family: "Hanuman", serif;
+            font-size: 1.1em;
+            font-weight: bold;
+            opacity: 0.9;
+
+        }
+
+        .sub-menu1 ul li a:hover {
+            transform: scale(1.1);
+            transition: all ease-in-out 0.4s;
+            color: #cd9090;
+        }
+
+        /* ================================================= */
+
+
+        .slide-bg {
+            width: 100%;
+            height: 300px;
+            background-image: url("image/Phnompenh.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+
+
+
+        .container-content {
+            width: 80%;
+            overflow: hidden;
+            /* background-color: #555; */
+            padding: 20px 0px 20px 0px;
+            box-sizing: border-box;
+            margin: auto;
+
+        }
+
+        .container-content .box {
+            width: 30%;
+            height: 450px;
+            float: left;
+            margin: 1%;
+            border-radius: 20px;
+            transition: all ease-in-out 0.4s;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            /* background-color: #ae5555; */
+        }
+
+        .box .image {
+            width: 100%;
+            height: 50%;
+            border-radius: 20px;
+            /* background-color: #1b9612; */
+        }
+
+        .box .image img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px 20px 0px 0px;
+            object-fit: cover;
+        }
+
+        .box .ds {
+
+            padding: 5px;
+
+            box-sizing: border-box;
+            width: 100%;
+            height: 50%;
+            /* background-color: #d85959; */
+        }
+
+        .box .ds p {
+            margin: 0px;
+            font-size: 1em;
+            line-height: 30px;
+            opacity: 0.8;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            transition: all ease-in-out 0.4s;
+        }
+
+
+        .overview {
+            width: 95%;
+            margin: auto;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 50px;
+            background-color: rgba(128, 128, 128, 0.282);
+        }
+
+        .overview h1 {
+            text-align: center;
+
+            font-size: 1.5em;
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
+            margin: 0px;
+            transform: translateY(8px);
+
+            opacity: 0.8;
+
+        }
+
+
+
+
+
+
+        .rating {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            margin-top: 5px;
+            margin-left: 6px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .rating-number {
+            font-size: 0.9em;
+            font-weight: bold;
+            opacity: 0.8;
+            color: #000;
+        }
+
+        .rating-stars {
+            display: flex;
+        }
+
+        .star {
+            width: 0.9em;
+            height: 0.9em;
+            border-radius: 50%;
+            margin-right: 0.2em;
+        }
+
+        .star.filled {
+            background-color: green;
+        }
+
+        .star.outline {
+            border: 2px solid green;
+            background-color: transparent;
+        }
+
+        .rating-reviews {
+            font-size: 0.7em;
+            color: #555;
+        }
+
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+            font-family: 'Moul', serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 220px;
+            margin: 20px 10px;
+        }
+
+        .footer-logo img {
+            width: 200px;
+            height: auto;
+        }
+
+        .footer-logo p {
+            margin: 5px 0;
+        }
+
+        .footer-contact p {
+            margin: 6px 0;
+            font-size: 14px;
+        }
+
+        .footer-social a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin: 8px 0;
+        }
+
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+        }
+
+
+
+        @media (max-width: 575.98px) {
+
+            /* Header section */
+            .header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+
+            .header .header-logo,
+            .header .header-menu {
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+
+            .header .header-menu a {
+                font-size: 0.8em;
+                padding: 0px;
+            }
+
+            .slide-bg .ds {
+                width: 50px;
+                left: 30px;
+                bottom: 30px;
+
+            }
+
+            .fa-bars {
+                transform: translateX(-11px);
+            }
+
+            .slide-bg .ds h1 {
+                font-size: 1.1em;
+            }
+
+            .slide-bg .ds p {
+                font-size: 0.5em;
+                list-style: 20px;
+                opacity: 0.7;
+
+            }
+
+
+
+
+            .header-logo img {
+                width: 200px;
+                transform: translateX(0);
+            }
+
+            .header-menu ul {
+                transform: translateX(0);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-menu ul li {
+                float: none;
+            }
+
+
+
+            .sub-menu1 {
+                transform: translateX(0);
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Slide section */
+            .slide-bg {
+                height: 300px;
+            }
+
+            .slide-bg .ds {
+                width: 60%;
+                transform: translate(0, 50px);
+                text-align: center;
+            }
+
+            .slide-bg .ds h1 {
+                font-size: 1.5em;
+            }
+
+            .slide-bg .ds p {
+                font-size: 0.9em;
+                line-height: 20px;
+            }
+
+
+            .container-content {
+                width: 95%;
+                overflow: hidden;
+                /* background-color: #555; */
+                padding: 20px 0px 20px 0px;
+                box-sizing: border-box;
+                margin: auto;
+
+            }
+
+            .container-content .box {
+                width: 45%;
+                height: 300px;
+                float: left;
+                margin: 1%;
+                border-radius: 20px;
+                transition: all ease-in-out 0.4s;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                /* background-color: #ae5555; */
+            }
+
+            .container-content .box p {
+                font-size: 0.7em;
+                line-height: 15px;
+
+            }
+
+            .rating {
+                font-size: 0.8em;
+                margin: 0px;
+            }
+
+
+
+
+
+
+        }
+
+
+
+
+        .btb-ds {
+            width: 60%;
+            overflow: hidden;
+            margin-left: 170px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .btb-ds p {
+            font-family: 'Hanuman', serif;
+            font-size: 15px;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="image/logo/LogoTRAVELCAMBODIA2023.png" alt="">
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li>
+                    <a href="index.html">ទំព័រដើម</a>
+                </li>
+                <li>
+                    <a href="about.html">អំពីពួកយើង</a>
+                </li>
+                <li><a href="contact.html">ទំនាក់ទំនង</a></li>
+                <li>
+                    <div class="sub-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="slide-bg">
+        <div class="sub-menu1">
+            <ul>
+                <li><a href="culture.html">វប្បធម៌ និង ជីវិត</a></li>
+                <li><a href="beach_holiday.html">កំសាន្តនៅឆ្នេរ</a></li>
+                <li><a href="family.html">កំសាន្តគ្រួសារ</a></li>
+                <li><a href="advanture.html">កំសាន្តផ្សងព្រេង</a></li>
+                <li><a href="luxury.html">កំសាន្តប្រណិត</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btb-ds" data-aos="fade-right" data-aos-offset="300">
+        <p>
+            ភ្នំពេញ គឺជារាជធានី និងជាទីក្រុងធំជាងគេរបស់ប្រទេសកម្ពុជា ដែលមានទីតាំងនៅចំណុចប្រសព្វនៃទន្លេមេគង្គ
+            និងទន្លេសាប។ រាជធានីភ្នំពេញ គឺជាទីក្រុងមួយដែលផ្តល់នូវភាពចម្រុះនៃកន្លែងទាក់ទាញបុរាណ និងទំនើប
+            ចាប់ពីព្រះបរមរាជវាំងដ៏អស្ចារ្យ និងវត្តប្រាក់ រហូតដល់សារមន្ទីរឧក្រិដ្ឋកម្មប្រល័យពូជសាសន៍ទួលស្លែងដ៏សោកសៅ
+            និងវាលពិឃាត។ ទីក្រុងភ្នំពេញក៏ជាទីក្រុងដែលមានវប្បធម៌រស់រវើក និងសម្បូរបែប ម្ហូប និងជីវិតពេលរាត្រី។ <br> <br>
+
+            ជាមួយនឹងកញ្ចប់ដំណើរទេសចរណ៍ភ្នំពេញកម្ពុជារបស់យើង អ្នកអាចស្វែងយល់ពីទីក្រុងភ្នំពេញ និងតំបន់ជុំវិញដែលល្អបំផុត។
+            អ្នក​អាច​ទៅ​ទស្សនា​ទីតាំង​ល្បីៗ​ដូច​ជា សារមន្ទីរជាតិ វត្តភ្នំ និង​វិមាន​ឯករាជ្យ។
+            អ្នកក៏អាចរីករាយនឹងជីវិតក្នុងស្រុកដូចជា ផ្សារធំថ្មី មាត់ទន្លេ និងផ្លូវលេខ 240។<br> <br>
+
+            ដំណើរកម្សាន្តរបស់យើងមានភាពបត់បែន និងតម្លៃសមរម្យ ហើយអាចត្រូវបានប្ដូរតាមតម្រូវការ និងចំណូលចិត្តរបស់អ្នក។
+            អ្នកអាចជ្រើសរើសពីដំណើរទេសចរណ៍ពាក់កណ្តាលថ្ងៃ ពេញមួយថ្ងៃ ឬច្រើនថ្ងៃ អាស្រ័យលើពេលវេលា
+            និងចំណាប់អារម្មណ៍របស់អ្នក។<br>
+            អ្នកក៏អាចបញ្ចូលគ្នានូវដំណើរកម្សាន្តនៅទីក្រុងភ្នំពេញរបស់អ្នកជាមួយនឹងភាពទាក់ទាញផ្សេងទៀតនៅក្នុងប្រទេសកម្ពុជា
+            ដូចជាខេត្តសៀមរាប ព្រះសីហនុ ឬបាត់ដំបង។<br> <br>
+
+            អ្វីក៏ដោយដែលអ្នកជ្រើសរើស <br>
+            អ្នកនឹងទទួលបាននូវបទពិសោធន៍ដែលមិនអាចបំភ្លេចបានជាមួយនឹងដំណើរកម្សាន្តភ្នំពេញនៅកម្ពុជារបស់យើង។
+            កុំអោយឱកាសនេះកន្លងផុតទៅ ដើម្បីស្វែងយល់ពីភាពស្រស់ស្អាត និងទាក់ទាញនៃទីក្រុងភ្នំពេញ។
+            កក់ដំណើរទេសចរណ៍ភ្នំពេញនៅកម្ពុជាថ្ងៃនេះ ហើយត្រៀមខ្លួនសម្រាប់ដំណើរផ្សងព្រេងដែលមិនអាចបំភ្លេចបាន។
+        </p>
+
+    </div>
+
+
+
+
+    <div class="container-content">
+
+    </div>
+
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="image/logo/LogoTRAVELCAMBODIA2023.png" alt="Travel Cambodia Logo">
+                    <p>Travel Cambodia</p>
+                    <p>ប្រកបដោយចីរភាព ក្នុងស្រុក ឆ្លាតវៃ</p>
+                </div>
+                <div class="footer-contact">
+                    <p>អាសយដ្ឋាន៖ ភ្នំពេញ កម្ពុជា</p>
+                    <p>ទូរស័ព្ទ៖ 0965429290</p>
+                    <p>អ៊ីមែល៖ hongly06082004@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-vimeo"></i></a>
+                </div>
+            </div>
+            <!-- Top Destinations -->
+            <div class="footer-column">
+                <h3>ទីកន្លែងល្បីៗ</h3>
+                <ul>
+                    <li>សៀមរាប</li>
+                    <li>ភ្នំពេញ</li>
+                    <li>បាត់ដំបង</li>
+                    <li>ព្រះសីហនុ</li>
+                    <li>កំពង់ចាម</li>
+                </ul>
+            </div>
+            <!-- Our Company -->
+            <div class="footer-column">
+                <h3>ក្រុមហ៊ុនរបស់យើង</h3>
+                <ul>
+                    <li><a href="#">អំពីពួកយើង</a></li>
+                    <li><a href="#">ព័ត៌មានក្រុមហ៊ុន</a></li>
+                    <li><a href="#">លក្ខខណ្ឌ</a></li>
+                    <li><a href="#">គោលការណ៍ឯកជនភាព</a></li>
+                    <li><a href="#">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+            <!-- Things to Know -->
+            <div class="footer-column">
+                <h3>អ្វីៗត្រូវដឹង</h3>
+                <ul>
+                    <li><a href="#">ទីកន្លែងមិនគួរលះបង់នៅកម្ពុជា</a></li>
+                    <li><a href="#">សកម្មភាពល្អបំផុតក្នុងកម្ពុជា</a></li>
+                    <li><a href="#">វប្បធម៌កម្ពុជា</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>២០២៥ TRAVEL CAMBODIA</p>
+        </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+    <script src="js/data.js"></script>
+
+    <script>
+        family(family_box);
+
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -587,8 +587,9 @@ button:hover {
     z-index: 1;
     color: white;
     font-size: 1em;
-    left: 30px;
-    right: 30px;
+    top: 50px;
+    left: 40px;
+    right: 40px;
     background-color: #12111171;
 
     padding: 10px;
@@ -597,6 +598,7 @@ button:hover {
     transform: translateY(490px);
 
 }
+
 
 .box-image .box:hover p {
     transform: translateY(0px);
