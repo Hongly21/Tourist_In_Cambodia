@@ -7,7 +7,9 @@ body {
 body p {
     font-family: 'Hanuman', serif;
 }
-
+body h1 {
+    font-family: 'Hanuman', serif;
+}
 
 .header {
     width: 100%;
@@ -99,6 +101,7 @@ body p {
 .sub-menu1 {
     background-color: rgba(25, 25, 26, 0.789);
     float: right;
+    display: none;
     border-radius: 0px 0px 10px 10px;
     z-index: 1;
 }
@@ -332,7 +335,7 @@ button:hover {
 
 .box-content .box {
     width: 31%;
-    height: 380px;
+    height: 395px;
     margin: 20px 0px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
@@ -744,8 +747,9 @@ button:hover {
 }
 
 .article .box .ds h1 {
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: #555;
+    
 }
 
 .article .box .ds p {
