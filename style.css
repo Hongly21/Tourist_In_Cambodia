@@ -47,9 +47,18 @@ body p {
 .header-menu ul {
     list-style-type: none;
     margin: auto;
-    transform: translateX(410px);
+    float: right;
+    transform: translateX(-25px);
     padding: 0px;
 
+}
+
+.fa-bars {
+    color: rgb(14, 13, 13);
+    font-size: 1.8em;
+    margin-top: 18px;
+    margin-left: 25px;
+    cursor: pointer;
 }
 
 .header-menu ul li {
@@ -85,19 +94,11 @@ body p {
     justify-content: center;
 }
 
-.fa-bars {
-    color: rgb(14, 13, 13);
-    font-size: 1.8em;
-    margin-top: 18px;
-    margin-left: 25px;
-    cursor: pointer;
-}
+
 
 .sub-menu1 {
     background-color: rgba(25, 25, 26, 0.789);
-    position: absolute;
-    transform: translateX(1380px);
-    display: none;
+    float: right;
     border-radius: 0px 0px 10px 10px;
     z-index: 1;
 }
@@ -768,10 +769,11 @@ button:hover {
 
 
 
-footer p h1 a{
+footer p h1 a {
     font-family: 'Hanuman', serif;
-    
+
 }
+
 footer {
     background-color: #333;
     color: #fff;
